@@ -58,7 +58,6 @@ class own_dataset(Dataset):
 class Generator(torch.nn.Module):
     def __init__(self, channels):
         super().__init__()
-        # Filters [1024, 512, 256]
         # Input_dim = C
         # Output_dim = C (number of channels)
         self.To_latent = nn.Sequential(
